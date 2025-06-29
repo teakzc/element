@@ -73,13 +73,13 @@ function element:SetCache(Template: BasePart | Model, CacheSize: number)
     CachedTable[Template.Name] = ObjectCache.new(Template, CacheSize, workspace.Container)
 end
 
-function element:Return(Part)
+function element:Return(Part: Instance)
     if Part:IsA("BasePart") or Part:IsA("Model") then
         local Cache : nil | any = CachedTable[Part.Name]
         if Cache ~= nil then
-            Cache:ReturnPart(Part)
+            Cache:ReturnPart(Part);
 
-            Part.Parent = Cache.CacheHolder
+            (Part :: any).Parent = Cache.CacheHolder;
         else
             error("Returning a part without a cache!")
         end
