@@ -1,0 +1,8 @@
+[package]
+name = "teakzc/element"
+version = "0.2.1"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+objectcache = "pyseph/objectcache@1.4.6"
