@@ -104,7 +104,7 @@ function element:Clone(Part: Instance, NewCFrame: CFrame?)
     else
         local Cache : nil | any = CachedTable2[Part.Name]
         if Cache == nil then
-            CachedTable2[Part.Name] = element.CreateCustomCache(Part)
+            element.CreateCustomCache(Part)
         end
 
         return CachedTable2[Part.Name]:Clone()
