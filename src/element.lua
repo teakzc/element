@@ -60,7 +60,7 @@ function element.CreateCustomCache(Part: Instance)
         table.insert(self.Storage, Clone)
     end
 
-    CustomCache[Part.Name] = self
+    CachedTable2[Part.Name] = self
 end
 
 function element:SetCache(Template: BasePart | Model, CacheSize: number)
