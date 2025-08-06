@@ -1,0 +1,29 @@
+name = "teakzc/element"
+version = "0.3.0"
+description = "a objectcache wrapper for convenience"
+authors = ["teakzc"]
+repository = "https://github.com/teakzc/element"
+license = "MIT"
+includes = [
+  "pesde.toml",
+  "README.md",
+  "LICENSE",
+  "src/**/*.luau",
+  "src/**",
+  "selene.toml",
+  "selene_definitions.yml"
+]
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
+[dependencies]
+objectcache = { wally = "pyseph/objectcache", version = "^1.4.6" }
