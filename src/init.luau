@@ -1,6 +1,6 @@
 --!strict
 
-local ObjectCache = require("./roblox_packages./objectcache")
+local ObjectCache = require("./roblox_packages/objectcache")
 
 local element = {}
 

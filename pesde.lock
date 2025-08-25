@@ -2,7 +2,7 @@
 # It is not intended for manual editing.
 format = 2
 name = "teakzc/element"
-version = "0.3.0"
+version = "0.3.1"
 target = "roblox"
 
 [graph."wally#pyseph/objectcache@1.4.6 roblox"]
